@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  "@splidejs/react-splide":
+    specifier: ^0.7.12
+    version: 0.7.12
+  "@splidejs/splide":
+    specifier: ^4.1.4
+    version: 4.1.4
   "@types/node":
     specifier: 20.5.9
     version: 20.5.9
@@ -2633,6 +2639,22 @@ packages:
       }
     engines: { node: ">=10" }
     dev: true
+
+  /@splidejs/react-splide@0.7.12:
+    resolution:
+      {
+        integrity: sha512-UfXH+j47jsMc4x5HA/aOwuuHPqn6y9+ZTNYPWDRD8iLKvIVMZlzq2unjUEvyDAU+TTVPZOXkG2Ojeoz0P4AkZw==,
+      }
+    dependencies:
+      "@splidejs/splide": 4.1.4
+    dev: false
+
+  /@splidejs/splide@4.1.4:
+    resolution:
+      {
+        integrity: sha512-5I30evTJcAJQXt6vJ26g2xEkG+l1nXcpEw4xpKh0/FWQ8ozmAeTbtniVtVmz2sH1Es3vgfC4SS8B2X4o5JMptA==,
+      }
+    dev: false
 
   /@swc/helpers@0.5.1:
     resolution:
