@@ -77,7 +77,7 @@ export default function FeatureSection() {
     },
   ];
   return (
-    <div className=" mx-20">
+    <div className=" lg:mx-20">
       <h2 className="font-semibold text-4xl text-white text-center mb-20">
         Applications that can be made
       </h2>

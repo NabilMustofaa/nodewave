@@ -23,7 +23,7 @@ export default function PriceSection() {
       <h2 className="font-semibold text-4xl text-white text-center mb-20">
         Applications that can be made
       </h2>
-      <div className="flex flex-row justify-center gap-24">
+      <div className="flex lg:flex-row flex-col justify-center gap-24">
         {prices.map((price) => (
           <PriceItem {...price} key={price.id} />
         ))}

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="w-screen bg-black border border-black pb-11 pt-20 text-white">
-      <div className="flex flex-col w-1/4 mx-auto">
+      <div className="flex flex-col lg:w-1/4 mx-auto">
         <Image
           src={"/img/logo.png"}
           width={226}
@@ -20,7 +20,7 @@ export default function Footer() {
           Phone : +62811258280 <br />
           Email : support@nodewave.id
         </p>
-        <div className="flex flex-row mt-11 justify-between mx-28">
+        <div className="flex flex-row mt-11 justify-between lg:mx-28 mx-80">
           <Image
             src={"img/ic_baseline-facebook.svg"}
             width={30}

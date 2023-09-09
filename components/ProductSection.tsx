@@ -38,11 +38,11 @@ export default function ProductSection() {
   };
 
   return (
-    <div className=" pb-24 px-20">
+    <div className=" pb-24 mt-8 lg:px-20">
       <h2 className="font-semibold text-4xl text-white text-center mb-10">
         Our Product
       </h2>
-      <div className="flex flex-row gap-6">
+      <div className="flex lg:flex-row flex-col gap-6">
         <ProductSelector
           products={products}
           onSelectProduct={handleProductSelect}
