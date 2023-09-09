@@ -20,22 +20,32 @@ export default function Footer() {
           Phone : +62811258280 <br />
           Email : support@nodewave.id
         </p>
-        <div className="flex flex-row mt-11 justify-between lg:mx-28 mx-80">
-          <Image
-            src={"img/ic_baseline-facebook.svg"}
-            width={30}
-            height={30}
-            alt=""
-          />
-          <Image src={"img/mdi_twitter.svg"} width={30} height={30} alt="" />
-          <Image src={"img/mdi_youtube.svg"} width={30} height={30} alt="" />
-          <Image src={"img/mdi_linkedin.svg"} width={30} height={30} alt="" />
-          <Image
-            src={"img/ri_instagram-fill.svg"}
-            width={30}
-            height={30}
-            alt=""
-          />
+        <div className="flex flex-row mt-11 justify-between mx-auto">
+          <a href="#">
+            <Image
+              src={"img/ic_baseline-facebook.svg"}
+              width={30}
+              height={30}
+              alt=""
+            />
+          </a>
+          <a href="#">
+            <Image src={"img/mdi_twitter.svg"} width={30} height={30} alt="" />
+          </a>
+          <a href="#">
+            <Image src={"img/mdi_youtube.svg"} width={30} height={30} alt="" />
+          </a>
+          <a href="#">
+            <Image src={"img/mdi_linkedin.svg"} width={30} height={30} alt="" />
+          </a>
+          <a href="#">
+            <Image
+              src={"img/ri_instagram-fill.svg"}
+              width={30}
+              height={30}
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </div>

@@ -18,7 +18,7 @@ export default function WorkItem({
 }: WorkItemProps) {
   return (
     <div
-      className="lg:w-9/12 w-full h-[32.5rem] bg-cover rounded-xl "
+      className="lg:w-11/12 w-full bg-cover rounded-xl "
       style={{ backgroundImage: `url(${backdrop})` }}
     >
       <div className="flex lg:flex-row flex-col gap-5 rounded-xl w-full h-full px-4 py-24  backdrop-blur">
@@ -27,7 +27,7 @@ export default function WorkItem({
           width={557}
           height={329}
           alt=""
-          className="lg:w-8/12 md:w-1/2 w-8/12 rounded-xl mx-auto"
+          className="lg:w-2/3 md:w-1/2 w-8/12 rounded-xl mx-auto"
         />
         <div className="flex flex-col text-center text-white gap-4">
           <h2 className="font-medium text-4xl">{title}</h2>

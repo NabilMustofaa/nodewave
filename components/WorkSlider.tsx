@@ -1,7 +1,15 @@
 import React from "react";
 import WorkItem from "./WorkItem";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+// Default theme
+import "@splidejs/splide/css";
 
+// or other themes
+import "@splidejs/splide/css/skyblue";
+import "@splidejs/splide/css/sea-green";
+
+// or only core styles
+import "@splidejs/splide/css/core";
 interface Work {
   id: number;
   title: string;
@@ -16,13 +24,13 @@ interface WorkSliderProps {
 
 export default function WorkSlider({ works }: WorkSliderProps) {
   return (
-    <div className="">
-      <div className="lg:block hidden">
+    <>
+      <div className="w-screen lg:block hidden">
         <Splide
           aria-label="My Favorite Images"
           options={{
-            perPage: 1.5,
-            gap: "-12vw",
+            perPage: 1.2,
+            gap: "1rem",
             focus: "center",
             arrows: false,
             pagination: false,
@@ -30,7 +38,7 @@ export default function WorkSlider({ works }: WorkSliderProps) {
         >
           {works.map((work) => (
             <SplideSlide key={work.id}>
-              <WorkItem {...work} />
+              <WorkItem {...work} key={work.id} />
             </SplideSlide>
           ))}
         </Splide>
@@ -40,6 +48,6 @@ export default function WorkSlider({ works }: WorkSliderProps) {
           <WorkItem {...work} key={work.id} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
